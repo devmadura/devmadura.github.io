@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaduraDev | web</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .code-content {
+        display: flex;
+        background-color: rgb(160, 164, 165);
+        width: 300px;
+        height: 90px;
+      }
+      .code {
+        padding: 10px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Komunitas <span id="teks"></span></h1>
+    <div class="container">
+      <pre class="code-content">
+            <code class="code">okelek</code>
+    </pre>
+    </div>
+    <div class="container">
+      <a href="https://maduradev.org">
+        <img src="src/maduralogo.jpg" alt="" width="400px"
+      /></a>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed("#teks", {
+        strings: [
+          "MaduraDev",
+          "Madura island",
+          "<span style='color: red'>treatan</span> tibik",
+        ],
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+      });
+
+      var typed6 = new Typed(".code", {
+        strings: [
+          "npm install maduradev^1000\n `installing island madura...` ^1000\n `insland madura success...`",
+        ],
+        typeSpeed: 40,
+        backSpeed: 0,
+        cursorChar: "",
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
